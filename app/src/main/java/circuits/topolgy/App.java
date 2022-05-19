@@ -3,6 +3,12 @@ package circuits.topolgy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+* A demo app that tests reading and writing {@link Topolgy}
+* 
+* @author Mohamed Ibraim
+* 
+*/
 public class App {
     public static void main(String[] args) {
         
