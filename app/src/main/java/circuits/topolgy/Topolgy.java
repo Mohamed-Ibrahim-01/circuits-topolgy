@@ -38,7 +38,7 @@ public class Topolgy {
         return this.id;
     }
 
-    public List<Component> getComponents(){
+    public List<Component> getComponentsList(){
         return new LinkedList<Component>(this.components.values());
     }
 

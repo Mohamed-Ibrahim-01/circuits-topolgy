@@ -64,7 +64,7 @@ public class Api {
      * @return List of {@link Component}> all the components in the given topology.
      */
     public List<Component> queryDevices(String topolgyId){
-        return new ArrayList<Component>(memoryDb.get(topolgyId).getComponents());
+        return new ArrayList<Component>(memoryDb.get(topolgyId).getComponentsList());
     }
 
     /**

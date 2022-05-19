@@ -34,7 +34,7 @@ class ApiTest {
     @Test void readingTopologies() {
         Topolgy top1 = API.readTopolgy(topolgy1Path);
         String top1Id = top1.getId();
-        List<Component> top1Components = top1.getComponents();
+        List<Component> top1Components = top1.getComponentsList();
 
         assertNotNull(top1, "topolgy1 object not created");
         assertEquals("top1" , top1Id, "Id not matched");
