@@ -14,6 +14,13 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonElement;
 
+/**
+* The class that representes the communication layer between the disk (reading and writing) json files.
+* In short it serialize and deserialize topologies from and into disk.
+* 
+* @author Mohamed Ibraim
+* 
+*/
 public class JsonIo{
     private static Gson gson = gsonConfig();
 

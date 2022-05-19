@@ -13,6 +13,12 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonElement;
 
 
+/**
+* Topolgy is the data structure representation of the circut and the main class that the api deals with.
+* 
+* @author Mohamed Ibraim
+* 
+*/
 public class Topolgy {
     protected String id;
     protected HashMap<String, Component> components;
