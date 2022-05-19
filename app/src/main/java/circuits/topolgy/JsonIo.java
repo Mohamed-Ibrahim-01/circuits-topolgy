@@ -69,9 +69,7 @@ public class JsonIo{
         GsonBuilder gsonBuilder = new GsonBuilder();
 
         gsonBuilder.registerTypeAdapter(Topolgy.class, new TopolgySerializer());
-
-        gsonBuilder.registerTypeAdapter(Resistor.class, new ComponentSerializer());
-        gsonBuilder.registerTypeAdapter(Nmos.class, new ComponentSerializer());
+        gsonBuilder.registerTypeHierarchyAdapter(Component.class, new ComponentSerializer());
         gsonBuilder.registerTypeAdapter(ComponentType.class, new ComponentTypeDeserializer());
 
         Gson gson = gsonBuilder.setPrettyPrinting().create();

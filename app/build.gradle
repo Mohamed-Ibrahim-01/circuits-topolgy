@@ -28,14 +28,25 @@ dependencies {
 }
 
 
-
-
 application {
     // Define the main class for the application.
     mainClass = 'circuits.topolgy.App'
 }
 
+test {
+    testLogging {
+        events = ["passed", "failed", "skipped"]
+        testLogging.exceptionFormat = 'full'
+        showStandardStreams = true
+    }
+}
+
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+task myJavadocs(type: Javadoc) {
+  source = sourceSets.main.allJava
+  classpath = project.sourceSets.main.compileClasspath
 }

@@ -1,6 +1,7 @@
 package circuits.topolgy;
 
 import java.lang.reflect.Type;
+import java.util.LinkedList;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSerializer;
@@ -18,6 +19,8 @@ abstract class Component {
         this.type = type;
         this.id = id;
     }
+
+    protected abstract LinkedList<String> getNodesIds();
 }
 
 class ComponentSerializer implements JsonSerializer<Component> {
